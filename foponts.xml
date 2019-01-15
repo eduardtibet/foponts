@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+
+<!--
+
+Copyright 1999-2017 The Apache Software Foundation
+Copyright 2015-2019 Eduard Tibet
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+<!-- 	ET: This file is based on the original Apache FOP 2.1 configuration file, located at:
+ 	http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf
+ 	Any further modifications of this file were made by Eduard Tibet, eduard.tibet [ @ ] gmail.com, owner and
+ 	and maintainer of http://www.singlesourcing.ru - Russian Single Sourcing Technical Documentation site.
+ 	Some extractions were made from the original configuration file (i.e. no AFP renderer) to fully adopt
+ 	the main goal of this file - working with DocBook/XML source files using Cyrillic (Russian) fonts. 
+ 	all fonts, mentioned in this file, are distributed according to their licenses - see license texts attached
+ 	All modification marked with 'ET' were made by Eduard Tibet -->
+<!--	ET: This file is distributed under Apache 2.0 License. See NOTICE and LICENSE for more info -->
+
+<fop version="1.0">
+
+<!-- 	ET: Font Base URI (absolute) for resolving font URLs (renderer section) with FOP font autodetect turned off
+	NOTE: Use only absolute paths as a font-base value. Relative paths don't work at all for some reasons!
+	If you want to use your local fonts on your local HDD/SSD for speedup rendering, change below value
+	to your local absolute path with font glyphs files.
+	Windows users should use file:///logical_drive: , i.e. file:///D:/fonts/ prefix to get things working.
+	Original full package for local creating of DocBook/XML documents in PDF format using FOP and Cyrillic (Russian) fonts
+	is available at http://www.singlesourcing.ru/pub/dist/fop-fonts/fop-fonts-cyr.tar.bz2 (bzip'ed tar file, 3.8 Mb) -->
+	
+  <font-base>/opt/fop-fonts/glyphs/latest/</font-base>
+  
+  <!-- Source resolution in dpi (dots/pixels per inch) for determining the size of pixels in SVG and bitmap images, default: 72dpi -->
+  <source-resolution>72</source-resolution>
+  <!-- Target resolution in dpi (dots/pixels per inch) for specifying the target resolution for generated bitmaps, default: 72dpi -->
+  <target-resolution>600</target-resolution>
+  
+  <!-- Strict user configuration -->
+  <strict-configuration>true</strict-configuration>
+
+  <!-- Strict FO validation -->
+  <strict-validation>true</strict-validation>
+  
+  <!-- Default page-height and page-width, in case value is specified as auto -->
+  <default-page-settings height="297mm" width="210mm"/>
+  
+  <!-- Information for specific renderers -->
+  <!-- Uses renderer mime type for renderers -->
+  <renderers>
+    <renderer mime="application/pdf">
+      <filterList>
+        <!-- provides compression using zlib flate (default is on) -->
+        <value>flate</value>
+  
+        <!-- encodes binary data into printable ascii characters (default off)
+             This provides about a 4:5 expansion of data size -->
+        <!-- <value>ascii-85</value> -->
+  
+        <!-- encodes binary data with hex representation (default off)
+             This filter is not recommended as it doubles the data size -->
+        <!-- <value>ascii-hex</value> -->
+      </filterList>
+
+      <fonts>
+<!-- ET: Sans family fonts -->
+ 	<!-- ET: Sans normal -->
+  	<font kerning="yes" embed-url="liberation-sans-regular.ttf">
+		<font-triplet name="sans-serif" style="normal" weight="normal"/>
+		<font-triplet name="Symbol" style="normal" weight="normal"/>
+		<font-triplet name="ZapfDingbats" style="normal" weight="normal"/>
+	</font>
+	
+	<!-- ET: Sans bold -->
+	<font kerning="yes" embed-url="liberation-sans-bold.ttf">
+		<font-triplet name="sans-serif" style="normal" weight="bold"/>
+		<font-triplet name="Symbol" style="normal" weight="bold"/>
+		<font-triplet name="ZapfDingbats" style="normal" weight="bold"/>
+	
+	</font>
+	<!-- ET: Sans italic -->
+	<font kerning="yes" embed-url="liberation-sans-italic.ttf">
+		<font-triplet name="sans-serif" style="italic" weight="normal"/>
+		<font-triplet name="Symbol" style="italic" weight="normal"/>
+		<font-triplet name="ZapfDingbats" style="italic" weight="normal"/>
+	
+	</font>
+	<!-- ET: Sans bold italic -->
+	<font kerning="yes" embed-url="liberation-sans-bold-italic.ttf">
+		<font-triplet name="sans-serif" style="italic" weight="bold"/>
+		<font-triplet name="Symbol" style="italic" weight="bold"/>
+		<font-triplet name="ZapfDingbats" style="italic" weight="bold"/>
+	
+	</font>
+	
+ <!-- ET: Serif family fonts -->
+ 	<!-- ET: Serif normal -->
+  	<font kerning="yes" embed-url="charis-sil-regular.ttf">
+		<font-triplet name="serif" style="normal" weight="normal"/>
+	</font>
+	<!-- ET: Serif italic -->
+	<font kerning="yes" embed-url="charis-sil-italic.ttf">
+		<font-triplet name="serif" style="italic" weight="normal"/>
+	</font>
+	<!-- ET: Serif bold -->
+	<font kerning="yes" embed-url="charis-sil-bold.ttf">
+		<font-triplet name="serif" style="normal" weight="bold"/>
+	</font>
+	<!-- ET: Serif bold italic -->
+	<font kerning="yes" embed-url="charis-sil-bold-italic.ttf">
+		<font-triplet name="serif" style="italic" weight="bold"/>
+	</font>
+
+<!-- ET: Monospace family fonts -->
+	<!-- ET: Monospace normal -->
+	<font kerning="yes" embed-url="free-monospaced-regular.ttf">
+    		<font-triplet name="monospace" style="normal" weight="normal"/>
+	</font>
+	<!-- ET: Monospace bold -->
+	<font kerning="yes" embed-url="free-monospaced-bold.ttf">
+		<font-triplet name="monospace" style="normal" weight="bold"/>
+	</font>
+	<!-- ET: Monospace italic -->
+	<font kerning="yes" embed-url="free-monospaced-italic.ttf">
+		<font-triplet name="monospace" style="italic" weight="normal"/>
+	</font>
+	<!-- ET: Monospace bold italic -->
+	<font kerning="yes" embed-url="free-monospaced-bold-italic.ttf">
+		<font-triplet name="monospace" style="italic" weight="bold"/>
+	</font>
+
+<!-- ET: Symbols family fonts - special for Greek, etc. -->
+	<font kerning="yes" embed-url="galatia-sil-regular.ttf">
+		<font-triplet name="symbol" style="normal" weight="normal"/>
+	</font>
+	<font kerning="yes" embed-url="galatia-sil-bold.ttf">
+		<font-triplet name="symbol" style="normal" weight="bold"/>
+	</font>
+      </fonts>
+
+      <!-- auto-detect fonts -->
+<!-- 	ET: It is special FOP feature to autodetect and use fonts installed and available at system paths
+      	at your local OS. Autodetect is turning off due to using certain free fonts.
+      	Disabling autodetect leads to use exact font glyphs and get predictable results on print output.
+      	If you want to try autodetect feature, comment out all font elements above and just uncomment
+      	auto-detect below - but at your own risk -->
+      	
+      <!-- <auto-detect/> -->
+      
+      <!-- This option lets you specify additional options on an XML handler -->
+      <!--xml-handler namespace="http://www.w3.org/2000/svg">
+        <stroke-text>false</stroke-text>
+      </xml-handler-->
+
+    </renderer>
+
+    <renderer mime="application/postscript">
+      <!-- This option forces the PS renderer to rotate landscape pages -->
+      <!--auto-rotate-landscape>true</auto-rotate-landscape-->
+      
+      <!-- This option lets you specify additional options on an XML handler -->
+      <!--xml-handler namespace="http://www.w3.org/2000/svg">
+        <stroke-text>false</stroke-text>
+      </xml-handler-->
+    </renderer>
+
+    <renderer mime="application/vnd.hp-PCL">
+    </renderer>
+
+    <!-- MIF does not have a renderer
+    <renderer mime="application/vnd.mif">
+    </renderer>
+    -->
+    <renderer mime="image/svg+xml">
+      <format type="paginated"/>
+      <link value="true"/>
+      <strokeText value="false"/>
+    </renderer>
+
+    <renderer mime="application/awt">
+    </renderer>
+
+    <renderer mime="image/png">
+      <!--transparent-page-background>true</transparent-page-background-->
+    </renderer>
+
+    <renderer mime="image/tiff">
+      <!--transparent-page-background>true</transparent-page-background-->
+      <!--compression>CCITT T.6</compression-->
+    </renderer>
+
+    <renderer mime="text/xml">
+    </renderer>
+
+    <!-- RTF does not have a renderer
+    <renderer mime="text/rtf">
+    </renderer>
+    -->
+
+    <renderer mime="text/plain">
+      <pageSize columns="80"/>
+    </renderer>
+
+  </renderers>
+
+</fop>
