@@ -35,7 +35,7 @@ If you are really scare about it, here is a list with a direct links to a homepa
 
 1. **Galatia SIL**: [font homepage](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=GalatiaSIL).
 2. **Charis SIL**: [font homepage](https://software.sil.org/charis/).
-3. **Liberation** [source files](https://github.com/pravins/liberation-fonts). NOTE: you have to compile them from the source using [FontForge](https://fontforge.github.io/en-US/).
+3. **Liberation** [source files](https://github.com/pravins/liberation-fonts). **NOTE**: you have to compile them from the source using [FontForge](https://fontforge.github.io/en-US/).
 4. **Free monospaced** [font download page](http://ftp.gnu.org/gnu/freefont/).
 
 ## How I can contact the author?
