@@ -21,7 +21,7 @@ limitations under the License.
 
 <!-- 	ET: This file is based on the original Apache FOP 2.1 configuration file, located at:
  	http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf
- 	Any further modifications of this file were made by Eduard Tibet, eduard.tibet [ @ ] gmail.com, the author of fopoont project [https://github.com/eduardtibet/foponts], owner and maintainer of http://www.singlesourcing.ru - Russian Single Sourcing Technical Documentation site.
+ 	Any further modifications of this file were made by Eduard Tibet, eduard.tibet [ @ ] gmail.com, the author of foponts project [https://github.com/eduardtibet/foponts], owner and maintainer of Russian Single Sourcing Technical Documentation site [http://www.singlesourcing.ru].
  	Some extractions were made from the original configuration file (i.e. no AFP renderer) to fully adopt the main goal of this file - working with DocBook/XML source files using Cyrillic (Russian) fonts. All fonts, mentioned in this file, are distributed according to their licenses - see license texts attached.
  	All modification marked with 'ET' were made by Eduard Tibet -->
  	
