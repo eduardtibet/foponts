@@ -90,12 +90,12 @@ $ git clone https://github.com/eduardtibet/foponts.git
 
 Default:
 
-```
+```xml
 <font-base>http://www.singlesourcing.ru/pub/foponts/foponts-fonts/</font-base>
 ```
 
 Changed:
-```
+```xml
 <font-base>/home/<your_user_directory>/foponts-pdf-generation/foponts-fonts/</font-base>
 ```
 
