@@ -40,7 +40,7 @@ $ fop -version
 6. Any utility that can extract bzipped tar (`.tar.bz2`) archives.
 7. Any `.fo` file (document) you need to get a PDF file from. You have to have a `serif`, `sans-serif` and `monospace` font families within your `.fo` file.
 
-**NOTE 1**: To check how foponts works, a sample `.fo` file is provided in a `samples` directory.
+**NOTE**: To check how foponts works, a sample `.fo` file is provided within a `samples` directory.
 
 ### Installation
 
@@ -51,6 +51,7 @@ There are 2 installation modes of the foponts:
  - Fonts on demand (FOD) mode - you take only foponts on your machine. All fonts that are needed to render your files will be dowloaded on demand from the author's website every time you will render the documents using Apache FOP and foponts.
  
 **NOTE 1**: FOD mode may descrease rendering speed, because all fonts used in a certain document are downloaded through the internet every time the document is rendered.
+
 **NOTE 2**: there are no hidden links or other obstructive stuff with a font files. All fonts from the author's website are available using direct plain URLs. See concerning [FAQ](FAQ.md#im-scared-about-downloading-fonts-from-the-authors-website-it-can-be-a-fraud).
 
 #### Installation in AOP mode
@@ -86,7 +87,7 @@ $ tar -xjf foponts-fonts.tar.bz2
 $ git clone https://github.com/eduardtibet/foponts.git
 ```
 
-6. foponts initially configured to run in a FOD mode, so change the default value of a `<font-base>` element in `foponts.xml` file to the actual local path with a downloaded fonts:
+6. foponts initially configured to run in a FOD mode, so change the default value of a `<font-base>` element in `foponts.xml` file to the actual local path to a downloaded fonts:
 
 Default:
 
@@ -96,10 +97,10 @@ Default:
 
 Changed:
 ```xml
-<font-base>/home/<your_user_directory>/foponts-pdf-generation/foponts-fonts/</font-base>
+<font-base>/home/[your_user_directory]/foponts-pdf-generation/foponts-fonts/</font-base>
 ```
 
-6. And, finally, run FOP to get pdf as a result:
+6. And, finally, run FOP to get PDF as a result:
 
 ```
 $ fop -c foponts.xml -fo samples/stdf_manual.fo -pdf stdf_manual.pdf
@@ -171,7 +172,7 @@ It fully depends on a type of your contribution:
 
 ## Authors
 
-* Eduard Tibet (@eduardtibet) - initial work based on the stock Apache FOP configuration file. See the original [file](http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf) if you are interested in.
+* Eduard Tibet ( @eduardtibet ) - initial work based on the stock Apache FOP configuration file. See the original [file](http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf) if you are interested in.
 
 ## License
 
