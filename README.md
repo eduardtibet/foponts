@@ -40,7 +40,7 @@ $ fop -version
 6. Any utility that can extract bzipped tar (`.tar.bz2`) archives.
 7. Any `.fo` file (document) you need to get a PDF file from. You have to have a `serif`, `sans-serif` and `monospace` font families within your `.fo` file.
 
-**NOTE**: To check how foponts works, a sample `.fo` file is provided within a `samples` directory.
+**NOTE**: To check how foponts works, a sample `.fo` file is provided within a `samples` directory (direct link to a sample [file](samples/stdf_manual.fo)
 
 ### Installation
 
@@ -160,7 +160,11 @@ $ wget http://www.singlesourcing.ru/pub/foponts/samples/stdf_manual.pdf
 
 ## FAQ
 
-See [FAQ.md](FAQ.md).
+See [FAQ](FAQ.md).
+
+## Roadmap
+
+See [TODO](TODO.md)
 
 ## Contributing
 
@@ -172,7 +176,7 @@ It fully depends on a type of your contribution:
 
 ## Authors
 
-* Eduard Tibet ( @eduardtibet ) - initial work based on the stock Apache FOP configuration file. See the original [file](http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf) if you are interested in.
+* Eduard Tibet [eduardtibet](https://github.com/eduardtibet) - initial work based on the stock Apache FOP configuration file. See the original [file](http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf) if you are interested in.
 
 ## License
 
