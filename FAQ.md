@@ -1,17 +1,17 @@
-# FOPonts FAQ
+# foponts FAQ
 
-## Why FOPonts and what does it mean?
+## Why foponts and what does it mean?
 
 Because it's quite simple and sounds good :)
 
 The name of the project is originated and formed from the name of the Apache project ("FOP") and a word "fonts".
 
-## Why FOPonts was created?
+## Why foponts was created?
 
 Short answer: to make things easy.
 
 Long answer:
-The author of the **FOPonts** project is a technical writer/documentation engineer by profession. He primary uses [DocBook/XML](https://docbook.org/) as a source for documentation (of course, he sometimes also uses lightweight markup languages like asciidoc, ReStructured text, Markdown).
+The author of the **foponts** project is a technical writer/documentation engineer by profession. He primary uses [DocBook/XML](https://docbook.org/) as a source for documentation (of course, he sometimes also uses lightweight markup languages like asciidoc, ReStructured text, Markdown).
 
 To get PDF files from a DocBook sources the most affordable (actually, free) software is [FOP](https://xmlgraphics.apache.org/fop/) from Apache Software Foundation.
 
@@ -29,15 +29,15 @@ As a result:
 
 ## I'm scared about downloading fonts from the author's website. It can be a fraud!
 
-If you are really scare about it, here is a list with a direct links to a homepages of fonts used in a FOPonts project. You can download it separately and use it without any scare :)
+If you are really scare about it, here is a list with a direct links to a homepages of fonts used in a foponts project. You can download it separately and use it without any scare :)
 
-**NOTE**: This case assumes that you take your time and put some efforts into grabbing all fonts in one place and configuring **FOPonts** completely manually. Sometimes it requires compiling fonts from theirs sources! How to do this is completely out of scope of the current or any other document within FOPonts project.
+**NOTE**: This case assumes that you take your time and put some efforts into grabbing all fonts in one place and configuring **foponts** completely manually. Sometimes it requires compiling fonts from theirs sources! How to do this is completely out of scope of the current or any other document within foponts project.
 
 1. **Galatia SIL**: [font homepage](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=GalatiaSIL).
 2. **Charis SIL**: [font homepage](https://software.sil.org/charis/).
-3. **Liberation** [source files](https://github.com/pravins/liberation-fonts). **NOTE**: you have to compile them from the source using [FontForge](https://fontforge.github.io/en-US/).
+3. **Liberation** [source files](https://github.com/pravins/liberation-fonts). **NOTE**: you have to compile them from source using [FontForge](https://fontforge.github.io/en-US/).
 4. **Free monospaced** [font download page](http://ftp.gnu.org/gnu/freefont/).
 
 ## How I can contact the author?
 
-Just drop me a line to eduard.tibet@gmail.com with a "FOPonts" in subject line. I'm very curious to hear about your usage of **FOPonts**.
+Just drop me a line to eduard.tibet@gmail.com with a "foponts" in subject line. I'm very curious to hear about your usage of **foponts**.
