@@ -21,12 +21,10 @@ limitations under the License.
 
 <!-- 	ET: This file is based on the original Apache FOP 2.1 configuration file, located at:
  	http://svn.apache.org/viewvc/xmlgraphics/fop/tags/fop-2_1/conf/fop.xconf
- 	Any further modifications of this file were made by Eduard Tibet, eduard.tibet [ @ ] gmail.com, owner and
- 	and maintainer of http://www.singlesourcing.ru - Russian Single Sourcing Technical Documentation site.
- 	Some extractions were made from the original configuration file (i.e. no AFP renderer) to fully adopt
- 	the main goal of this file - working with DocBook/XML source files using Cyrillic (Russian) fonts. 
- 	all fonts, mentioned in this file, are distributed according to their licenses - see license texts attached
+ 	Any further modifications of this file were made by Eduard Tibet, eduard.tibet [ @ ] gmail.com, the author of fopoont project [https://github.com/eduardtibet/foponts], owner and maintainer of http://www.singlesourcing.ru - Russian Single Sourcing Technical Documentation site.
+ 	Some extractions were made from the original configuration file (i.e. no AFP renderer) to fully adopt the main goal of this file - working with DocBook/XML source files using Cyrillic (Russian) fonts. All fonts, mentioned in this file, are distributed according to their licenses - see license texts attached.
  	All modification marked with 'ET' were made by Eduard Tibet -->
+ 	
 <!--	ET: This file is distributed under Apache 2.0 License. See NOTICE and LICENSE for more info -->
 
 <fop version="1.0">
@@ -35,9 +33,7 @@ limitations under the License.
 	NOTE: Use only absolute paths as a font-base value. Relative paths don't work at all for some reasons!
 	If you want to use your local fonts on your local HDD/SSD for speedup rendering, change below value
 	to your local absolute path with font glyphs files.
-	Windows users should use file:///logical_drive: , i.e. file:///D:/fonts/ prefix to get things working.
-	Original full package for local creating of DocBook/XML documents in PDF format using FOP and Cyrillic (Russian) fonts
-	is available at http://www.singlesourcing.ru/pub/dist/fop-fonts/fop-fonts-cyr.tar.bz2 (bzip'ed tar file, 3.8 Mb) -->
+	Windows users should use file:///logical_drive: , i.e. file:///D:/fonts/ prefix to get things working. -->
 	
   <font-base>http://www.singlesourcing.ru/pub/foponts/foponts-fonts/</font-base>
   
@@ -149,8 +145,7 @@ limitations under the License.
       </fonts>
 
       <!-- auto-detect fonts -->
-<!-- 	ET: It is special FOP feature to autodetect and use fonts installed and available at system paths
-      	at your local OS. Autodetect is turning off due to using certain free fonts.
+<!-- 	ET: It is special FOP feature to autodetect and use fonts installed and available at system paths at your local OS. Autodetect is turning off due to using certain free fonts.
       	Disabling autodetect leads to use exact font glyphs and get predictable results on print output.
       	If you want to try autodetect feature, comment out all font elements above and just uncomment
       	auto-detect below - but at your own risk -->
