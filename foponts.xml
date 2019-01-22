@@ -39,7 +39,7 @@ limitations under the License.
 	Original full package for local creating of DocBook/XML documents in PDF format using FOP and Cyrillic (Russian) fonts
 	is available at http://www.singlesourcing.ru/pub/dist/fop-fonts/fop-fonts-cyr.tar.bz2 (bzip'ed tar file, 3.8 Mb) -->
 	
-  <font-base>/opt/fop-fonts/glyphs/latest/</font-base>
+  <font-base>http://www.singlesourcing.ru/pub/foponts/foponts-fonts/</font-base>
   
   <!-- Source resolution in dpi (dots/pixels per inch) for determining the size of pixels in SVG and bitmap images, default: 72dpi -->
   <source-resolution>72</source-resolution>
