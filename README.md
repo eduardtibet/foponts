@@ -167,7 +167,7 @@ foponts-pdf-generation
   |
   /foponts
   |  |
-  |	 /docbook-samples
+  |  /docbook-samples
   |     |
   |     /stdf
   /foponts-fonts *(in case you use AOP mode)*
