@@ -105,7 +105,7 @@ $ tar -xjf foponts-fonts.tar.bz2
 $ git clone --recursive https://github.com/eduardtibet/foponts.git
 ```
 
-**NOTE:** You have to use `--recursive` option, because the directory with a samples is a separate author's project and is included as a git submodule here!
+**NOTE:** You have to use `--recursive` option, because the directory with a samples is a separate author's [project](https://github.com/eduardtibet/docbook-samples) and is included as a git submodule here!
 
 6. Change a directory to the foponts project:
 
@@ -148,7 +148,7 @@ $ cd foponts-pdf-generation
 $ git clone --recursive https://github.com/eduardtibet/foponts.git
 ```
 
-**NOTE:** You have to use `--recursive` option, because the directory with a samples is a separate author's project and is included as a git submodule here!
+**NOTE:** You have to use `--recursive` option, because the directory with a samples is a separate author's [project](https://github.com/eduardtibet/docbook-samples) and is included as a git submodule here!
 
 4. Change a directory to the foponts project:
 
@@ -166,10 +166,10 @@ To your reference, this readme and all procedures within it assumes the followin
 foponts-pdf-generation
   |
   /foponts
-  |		|
-  |		/docbook-samples
-  |				|
-  |				/stdf
+  |  |
+  |	 /docbook-samples
+  |     |
+  |     /stdf
   /foponts-fonts *(in case you use AOP mode)*
 ```
 
