@@ -56,7 +56,9 @@ $ fop -version
 6. Any utility that can extract bzipped tar (`.tar.bz2`) archives.
 7. Any `.fo` file (document) you need to get a PDF file from. You have to have a `serif`, `sans-serif` and `monospace` font families within your `.fo` file.
 
-**NOTE**: To check how foponts works, a sample `.fo` file is provided within a `samples` directory (direct link to a sample [file](samples/stdf_manual.fo)
+**NOTE 1**: To check how foponts works, a sample `.fo` file is provided within a `docbook-samples` directory (direct link to a sample [file](https://github.com/eduardtibet/docbook-samples/blob/67a87ce684ac4a6baacdb12a26528aeb585b5eeb/stdf/stdf_manual.fo)
+
+**NOTE 2** Due to samples, used in this project, are the core of another project [link](https://github.com/eduardtibet/docbook-samples/), `docbook-samples` folder is provided as a git submodule within foponts project.
 
 ### Installation modes and steps
 
