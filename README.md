@@ -52,13 +52,13 @@ $ fop -version
 ```
 
 4. Git - to clone the repo.
-5. Any utility (or web browser) - to download files (`wget` is recommended).
-6. Any utility that can extract bzipped tar (`.tar.bz2`) archives.
+5. Any utility (or web browser) - to download a files (`wget` is recommended).
+6. Any utility that can extract a bzipped tar (`.tar.bz2`) archives.
 7. Any `.fo` file (document) you need to get a PDF file from. You have to have a `serif`, `sans-serif` and `monospace` font families within your `.fo` file.
 
 **NOTE 1**: To check how foponts works, a sample `.fo` file is provided within a `docbook-samples` directory (direct link to a sample [file](https://github.com/eduardtibet/docbook-samples/blob/67a87ce684ac4a6baacdb12a26528aeb585b5eeb/stdf/stdf_manual.fo)
 
-**NOTE 2** Due to samples, used in this project, are the core of another project [link](https://github.com/eduardtibet/docbook-samples/), `docbook-samples` folder is provided as a git submodule within foponts project.
+**NOTE 2**: Due to a samples, used in this project, are a core of an another [project](https://github.com/eduardtibet/docbook-samples/), `docbook-samples` folder is provided as a git submodule within foponts project.
 
 ### Installation modes and steps
 
@@ -175,7 +175,7 @@ foponts-pdf-generation
   /foponts-fonts *(in case you use AOP mode)*
 ```
 
-To use foponts project to generate `.pdf` file from your `.fo` file: 
+To use foponts project to generate a `.pdf` file from your `.fo` file: 
 
 1. Run FOP with the following command line (below shows how to generate a PDF from a project sample):
 
@@ -183,7 +183,7 @@ To use foponts project to generate `.pdf` file from your `.fo` file:
 $ fop -c foponts.xml -fo docbook-samples/stdf/stdf_manual.fo -pdf docbook-samples/stdf/stdf_manual.pdf
 ```
 
-2. Look at the result just opening the generated file `stdf_manual.pdf` (or any other generated file of your own) in your favorite PDF viewer:
+2. Look at the result by just opening the generated file `stdf_manual.pdf` (or any other generated file of your own) in your favorite PDF viewer:
 
 ```
 $ xpdf docbook-samples/stdf/stdf_manual.pdf
