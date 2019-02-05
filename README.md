@@ -22,16 +22,16 @@
 
 ## About
 
-foponts is a simple configuration file for using in conjunction with [Apache FOP](https://xmlgraphics.apache.org/fop). Its aim is to produce pretty looking PDF files using only free OFL-licensed fonts to avoid any patent- or/and license-related issues.
+foponts is a simple configuration file for using in conjunction with [Apache FOP](https://xmlgraphics.apache.org/fop). Its aim is to produce pretty looking `.pdf` files using only free OFL-licensed fonts to avoid any patent- or/and license-related issues.
 
 BTW, if you don't aware about what Apache FOP is suitable for, check out its [FAQ](https://xmlgraphics.apache.org/fop/faq.html).
 
-foponts is for anyone who creates PDF files with Apache FOP. It's specially recommended and designed for everyone working with DocBook/XML files and who wants to get a predictable result without any headache.
+foponts is for anyone who creates `.pdf` files with Apache FOP. It's specially designed and highly recommended for everyone working with DocBook/XML files and who wants to get a predictable result without any headache.
 
 foponts is strongly recommended when:
-- you are not sure about fonts you are using and/or have and feel uncomfortable with any patent-related issues with fonts in your documents;
-- you want to be sure that you use fonts that are free to use anywhere, where OFL license allows you (in fact, you can use these fonts near everywhere);
-- you are using Cyrillic characters in your documents or deal with Cyrillic documents only and want to get a PDF without any hassle.
+- you are not sure about fonts you are using and/or have and feel uncomfortable with any patent-related issues with fonts within your documents;
+- you want to be sure that you use fonts that are free to use anywhere, where [OFL license](https://scripts.sil.org/cms/scripts/render_download.php?format=file&media_id=OFL_plaintext&filename=OFL.txt) allows you (in fact, you can use these fonts near everywhere);
+- you are using Cyrillic characters in your documents or deal with a Cyrillic documents only (work with a documents in Russian) and want to get a `.pdf` without any hassle - you are boring to get a document full of **####** signs instead of Cyrillic characters.
 
 
 ## Installation
@@ -54,11 +54,11 @@ $ fop -version
 4. Git - to clone the repo.
 5. Any utility (or web browser) - to download a files (`wget` is recommended).
 6. Any utility that can extract a bzipped tar (`.tar.bz2`) archives.
-7. Any `.fo` file (document) you need to get a PDF file from. You have to have a `serif`, `sans-serif` and `monospace` font families within your `.fo` file.
+7. Any `.fo` file (document) you need to get a `.pdf` file from. You have to have a `serif`, `sans-serif` and `monospace` font families within your `.fo` file.
 
 **NOTE 1**: To check how foponts works, a sample `.fo` file is provided within a `docbook-samples` directory (direct link to a sample [file](https://github.com/eduardtibet/docbook-samples/blob/67a87ce684ac4a6baacdb12a26528aeb585b5eeb/stdf/stdf_manual.fo)
 
-**NOTE 2**: Due to a samples, used in this project, are a core of an another [project](https://github.com/eduardtibet/docbook-samples/), `docbook-samples` folder is provided as a git submodule within foponts project.
+**NOTE 2**: Due to samples, used in this project, are the core of another [project](https://github.com/eduardtibet/docbook-samples/), `docbook-samples` directory is provided as a git submodule within a current project.
 
 ### Installation modes and steps
 
@@ -68,11 +68,11 @@ There are 2 installation modes of the foponts:
 
  - All on-premises (AOP) mode - you will have all files on your computer or server. This mode assumes you take foponts and appropriate fonts, either from a fonts publishers websites, or from the foponts author's website in a single all-in-one `.tar.bz2` archive.
 
- - Fonts on demand (FOD) mode - you take only foponts on your machine. All fonts that are needed to render your files will be dowloaded on demand from the author's website every time you will render the documents using Apache FOP and foponts.
+ - Fonts on demand (FOD) mode - you take only foponts and store it on your machine. All fonts that are needed to render your files will be dowloaded on demand from the author's website every time you will render a documents using Apache FOP and foponts.
  
-**NOTE 1**: FOD mode may descrease rendering speed, because all fonts used in a certain document are downloaded through the internet every time the document is rendered.
+**NOTE 1**: FOD mode may descrease rendering speed, because all fonts used in a certain document are downloaded through the internet every time a document is rendered.
 
-**NOTE 2**: there are no hidden links or other obstructive stuff with a font files. All fonts from the author's website are available using direct plain URLs. See concerning [FAQ](FAQ.md#im-scared-about-downloading-fonts-from-the-authors-website-it-can-be-a-fraud).
+**NOTE 2**: There are no hidden links or other obstructive stuff with a font files. All fonts from the author's website are available using direct plain URLs. See concerning [FAQ](FAQ.md#im-scared-about-downloading-fonts-from-the-authors-website-it-can-be-a-fraud).
 
 #### Installation in AOP mode
 
@@ -82,7 +82,7 @@ There are 2 installation modes of the foponts:
 $ mkdir foponts-pdf-generation
 ```
 
-2. Change directory to the created one:
+2. Change a directory to the created one:
 
 ```
 $ cd foponts-pdf-generation
@@ -93,7 +93,6 @@ $ cd foponts-pdf-generation
 ```
 $ wget http://www.singlesourcing.ru/pub/foponts/dist/foponts-fonts.tar.bz2
 ```
-
 
 4. Extract archive content to the created folder:
 
@@ -123,7 +122,8 @@ Default:
 <font-base>http://www.singlesourcing.ru/pub/foponts/foponts-fonts/</font-base>
 ```
 
-Change to:
+Changed sample:
+
 ```xml
 <font-base>/home/[your_user_directory]/foponts-pdf-generation/foponts-fonts/</font-base>
 ```
@@ -158,7 +158,7 @@ $ git clone --recursive https://github.com/eduardtibet/foponts.git
 $ cd foponts
 ```
 
-6. Check that you have a stable internet connection, due to all requited fonts will be downloaded on demand.
+6. Check that you have a stable internet connection, due to all required fonts will be downloaded on demand.
 
 
 ## Usage
@@ -177,7 +177,7 @@ foponts-pdf-generation
 
 To use foponts project to generate a `.pdf` file from your `.fo` file: 
 
-1. Run FOP with the following command line (below shows how to generate a PDF from a project sample):
+1. Run FOP with the following command line (an example below shown how to generate a `.pdf` from a project's sample `.fo` file):
 
 ```
 $ fop -c foponts.xml -fo docbook-samples/stdf/stdf_manual.fo -pdf docbook-samples/stdf/stdf_manual.pdf
