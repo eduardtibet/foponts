@@ -38,6 +38,6 @@ If you are really scare about it, here is a list with a direct links to a homepa
 3. **Liberation** [source files](https://github.com/pravins/liberation-fonts). **NOTE**: you have to compile them from source using [FontForge](https://fontforge.github.io/en-US/).
 4. **Free monospaced** [font download page](http://ftp.gnu.org/gnu/freefont/).
 
-## How I can contact the author?
+## How can I contact the author?
 
 Just drop me a line to eduard.tibet@gmail.com with a "foponts" in subject line. I'm very curious to hear about your usage of **foponts**.
