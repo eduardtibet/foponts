@@ -1,5 +1,8 @@
 # foponts FAQ
 
+> [!WARNING]
+> Main domain (**singlesourcing.ru**) used in that (and other) project(s) was re-registered to another person some time ago, and, therefore, was lost by the author. Please, use this project with care and don't download any files from these URIs. Fixes of documentation and corresponding links within the project files itself will be done in upcoming weeks.
+
 ## Why foponts and what does it mean?
 
 Because it's quite simple and sounds good :)
