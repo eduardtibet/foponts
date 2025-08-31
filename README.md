@@ -22,6 +22,9 @@
 
 ## About
 
+> [!WARNING]
+> Main domain (**singlesourcing.ru**) used in that (and other) project(s) was re-registered to another person some time ago, and, therefore, was lost by the author. Please, use this project with care and don't download any files from these URIs. Fixes of documentation and corresponding links within the project files itself will be done in upcoming weeks.
+
 foponts is a simple configuration file for using in conjunction with [Apache FOP](https://xmlgraphics.apache.org/fop). Its aim is to produce pretty looking `.pdf` files using only free OFL-licensed fonts to avoid any patent- or/and license-related issues.
 
 BTW, if you are not aware about what Apache FOP is suitable for, check out its [FAQ](https://xmlgraphics.apache.org/fop/faq.html).
